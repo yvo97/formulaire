@@ -24,8 +24,8 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   print(message.notification.body);
   flutterLocalNotificationsPlugin.show(
       message.data.hashCode,
-      message.data['titre de la notification'],
-      message.data['corps de la notification'],
+      message.data['titre de la notif'],
+      message.data['corps de la notif'],
       NotificationDetails(
         android: AndroidNotificationDetails(
           channel.id,
